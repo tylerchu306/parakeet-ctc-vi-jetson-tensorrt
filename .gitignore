@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Model downloads and generated deployment artifacts
+cache/
+hf_cache/
+.huggingface/
+onnx/
+onnx_packed/
+engines/
+*.nemo
+*.engine
+*.plan
+*.onnx
+*.onnx.data
+*.data
+
+# Runtime files
+api_tmp/
+tmp/
+*.pid
+*.sock
+workspace/asr_api.py.backup-*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.tar
+*.tar.gz
+*.zip
+*.7z
