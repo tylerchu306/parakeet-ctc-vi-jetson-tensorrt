@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "job_id": "2f704a68-32b6-4ea1-9c11-6797f3c0239f",
+  "status": "completed",
+  "text": "Xin chào đây là bản thử nghiệm vai ni chạy trên dét sen o rin en ế .",
+  "language": "vi-VN",
+  "backend": "tensorrt-fp16-10.11",
+  "audio": {
+    "filename": "test_vieneu_microphone.webm",
+    "content_type": "audio/webm",
+    "uploaded_bytes": 19294,
+    "duration_seconds": 4.64,
+    "sample_rate": 16000,
+    "converted_by_ffmpeg": true
+  },
+  "latency": {
+    "upload_seconds": 0.000368,
+    "normalize_seconds": 0.112485,
+    "queue_wait_seconds": 1.9e-05,
+    "preprocess_seconds": 0.011297,
+    "tensorrt_seconds": 0.065825,
+    "decode_seconds": 0.000312,
+    "inference_total_seconds": 0.079545,
+    "server_total_seconds": 0.19361,
+    "target_seconds": 1.5,
+    "passed": true
+  }
+}

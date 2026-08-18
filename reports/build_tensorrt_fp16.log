@@ -1,0 +1,143 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --onnx=/home/jetson4/models/parakeet_ctc_vi/onnx_packed/parakeet_ctc_vi_fp32.onnx --saveEngine=/home/jetson4/models/parakeet_ctc_vi/engines/parakeet_ctc_vi_fp16.engine --minShapes=audio_signal:1x80x16,length:1 --optShapes=audio_signal:1x80x500,length:1 --maxShapes=audio_signal:1x80x2000,length:1 --fp16 --memPoolSize=workspace:4G --builderOptimizationLevel=3 --skipInference
+[08/14/2026-08:59:57] [I] === Model Options ===
+[08/14/2026-08:59:57] [I] Format: ONNX
+[08/14/2026-08:59:57] [I] Model: /home/jetson4/models/parakeet_ctc_vi/onnx_packed/parakeet_ctc_vi_fp32.onnx
+[08/14/2026-08:59:57] [I] Output:
+[08/14/2026-08:59:57] [I] === Build Options ===
+[08/14/2026-08:59:57] [I] Memory Pools: workspace: 4096 MiB, dlaSRAM: default, dlaLocalDRAM: default, dlaGlobalDRAM: default, tacticSharedMem: default
+[08/14/2026-08:59:57] [I] avgTiming: 8
+[08/14/2026-08:59:57] [I] Precision: FP32+FP16
+[08/14/2026-08:59:57] [I] LayerPrecisions:
+[08/14/2026-08:59:57] [I] Layer Device Types:
+[08/14/2026-08:59:57] [I] Calibration:
+[08/14/2026-08:59:57] [I] Refit: Disabled
+[08/14/2026-08:59:57] [I] Strip weights: Disabled
+[08/14/2026-08:59:57] [I] Version Compatible: Disabled
+[08/14/2026-08:59:57] [I] ONNX Plugin InstanceNorm: Disabled
+[08/14/2026-08:59:57] [I] TensorRT runtime: full
+[08/14/2026-08:59:57] [I] Lean DLL Path:
+[08/14/2026-08:59:57] [I] Tempfile Controls: { in_memory: allow, temporary: allow }
+[08/14/2026-08:59:57] [I] Exclude Lean Runtime: Disabled
+[08/14/2026-08:59:57] [I] Sparsity: Disabled
+[08/14/2026-08:59:57] [I] Safe mode: Disabled
+[08/14/2026-08:59:57] [I] Build DLA standalone loadable: Disabled
+[08/14/2026-08:59:57] [I] Allow GPU fallback for DLA: Disabled
+[08/14/2026-08:59:57] [I] DirectIO mode: Disabled
+[08/14/2026-08:59:57] [I] Restricted mode: Disabled
+[08/14/2026-08:59:57] [I] Skip inference: Enabled
+[08/14/2026-08:59:57] [I] Save engine: /home/jetson4/models/parakeet_ctc_vi/engines/parakeet_ctc_vi_fp16.engine
+[08/14/2026-08:59:57] [I] Load engine:
+[08/14/2026-08:59:57] [I] Profiling verbosity: 0
+[08/14/2026-08:59:57] [I] Tactic sources: Using default tactic sources
+[08/14/2026-08:59:57] [I] timingCacheMode: local
+[08/14/2026-08:59:57] [I] timingCacheFile:
+[08/14/2026-08:59:57] [I] Enable Compilation Cache: Enabled
+[08/14/2026-08:59:57] [I] errorOnTimingCacheMiss: Disabled
+[08/14/2026-08:59:57] [I] Preview Features: Use default preview flags.
+[08/14/2026-08:59:57] [I] MaxAuxStreams: -1
+[08/14/2026-08:59:57] [I] BuilderOptimizationLevel: 3
+[08/14/2026-08:59:57] [I] Calibration Profile Index: 0
+[08/14/2026-08:59:57] [I] Weight Streaming: Disabled
+[08/14/2026-08:59:57] [I] Runtime Platform: Same As Build
+[08/14/2026-08:59:57] [I] Debug Tensors:
+[08/14/2026-08:59:57] [I] Input(s)s format: fp32:CHW
+[08/14/2026-08:59:57] [I] Output(s)s format: fp32:CHW
+[08/14/2026-08:59:57] [I] Input build shape (profile 0): audio_signal=1x80x16+1x80x500+1x80x2000
+[08/14/2026-08:59:57] [I] Input build shape (profile 0): length=1+1+1
+[08/14/2026-08:59:57] [I] Input calibration shapes: model
+[08/14/2026-08:59:57] [I] === System Options ===
+[08/14/2026-08:59:57] [I] Device: 0
+[08/14/2026-08:59:57] [I] DLACore:
+[08/14/2026-08:59:57] [I] Plugins:
+[08/14/2026-08:59:57] [I] setPluginsToSerialize:
+[08/14/2026-08:59:57] [I] dynamicPlugins:
+[08/14/2026-08:59:57] [I] ignoreParsedPluginLibs: 0
+[08/14/2026-08:59:57] [I]
+[08/14/2026-08:59:57] [I] === Inference Options ===
+[08/14/2026-08:59:57] [I] Batch: Explicit
+[08/14/2026-08:59:57] [I] Input inference shape : length=1
+[08/14/2026-08:59:57] [I] Input inference shape : audio_signal=1x80x500
+[08/14/2026-08:59:57] [I] Iterations: 10
+[08/14/2026-08:59:57] [I] Duration: 3s (+ 200ms warm up)
+[08/14/2026-08:59:57] [I] Sleep time: 0ms
+[08/14/2026-08:59:57] [I] Idle time: 0ms
+[08/14/2026-08:59:57] [I] Inference Streams: 1
+[08/14/2026-08:59:57] [I] ExposeDMA: Disabled
+[08/14/2026-08:59:57] [I] Data transfers: Enabled
+[08/14/2026-08:59:57] [I] Spin-wait: Disabled
+[08/14/2026-08:59:57] [I] Multithreading: Disabled
+[08/14/2026-08:59:57] [I] CUDA Graph: Disabled
+[08/14/2026-08:59:57] [I] Separate profiling: Disabled
+[08/14/2026-08:59:57] [I] Time Deserialize: Disabled
+[08/14/2026-08:59:57] [I] Time Refit: Disabled
+[08/14/2026-08:59:57] [I] NVTX verbosity: 0
+[08/14/2026-08:59:57] [I] Persistent Cache Ratio: 0
+[08/14/2026-08:59:57] [I] Optimization Profile Index: 0
+[08/14/2026-08:59:57] [I] Weight Streaming Budget: 100.000000%
+[08/14/2026-08:59:57] [I] Inputs:
+[08/14/2026-08:59:57] [I] Debug Tensor Save Destinations:
+[08/14/2026-08:59:57] [I] === Reporting Options ===
+[08/14/2026-08:59:57] [I] Verbose: Disabled
+[08/14/2026-08:59:57] [I] Averages: 10 inferences
+[08/14/2026-08:59:57] [I] Percentiles: 90,95,99
+[08/14/2026-08:59:57] [I] Dump refittable layers:Disabled
+[08/14/2026-08:59:57] [I] Dump output: Disabled
+[08/14/2026-08:59:57] [I] Profile: Disabled
+[08/14/2026-08:59:57] [I] Export timing to JSON file:
+[08/14/2026-08:59:57] [I] Export output to JSON file:
+[08/14/2026-08:59:57] [I] Export profile to JSON file:
+[08/14/2026-08:59:57] [I]
+[08/14/2026-08:59:57] [I] === Device Information ===
+[08/14/2026-08:59:57] [I] Available Devices:
+[08/14/2026-08:59:57] [I]   Device 0: "Orin" UUID: GPU-86f9ca4d-8100-5569-bbd3-d18d32f26c01
+[08/14/2026-08:59:57] [I] Selected Device: Orin
+[08/14/2026-08:59:57] [I] Selected Device ID: 0
+[08/14/2026-08:59:57] [I] Selected Device UUID: GPU-86f9ca4d-8100-5569-bbd3-d18d32f26c01
+[08/14/2026-08:59:57] [I] Compute Capability: 8.7
+[08/14/2026-08:59:57] [I] SMs: 8
+[08/14/2026-08:59:57] [I] Device Global Memory: 15655 MiB
+[08/14/2026-08:59:57] [I] Shared Memory per SM: 164 KiB
+[08/14/2026-08:59:57] [I] Memory Bus Width: 256 bits (ECC disabled)
+[08/14/2026-08:59:57] [I] Application Compute Clock Rate: 1.173 GHz
+[08/14/2026-08:59:57] [I] Application Memory Clock Rate: 1.173 GHz
+[08/14/2026-08:59:57] [I]
+[08/14/2026-08:59:57] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[08/14/2026-08:59:57] [I]
+[08/14/2026-08:59:57] [I] TensorRT version: 10.3.0
+[08/14/2026-08:59:57] [I] Loading standard plugins
+[08/14/2026-08:59:57] [I] [TRT] [MemUsageChange] Init CUDA: CPU +2, GPU +0, now: CPU 31, GPU 1336 (MiB)
+[08/14/2026-08:59:59] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +927, GPU +974, now: CPU 1001, GPU 2355 (MiB)
+[08/14/2026-08:59:59] [I] Start parsing network model.
+[08/14/2026-08:59:59] [I] [TRT] ----------------------------------------------------------------
+[08/14/2026-08:59:59] [I] [TRT] Input filename:   /home/jetson4/models/parakeet_ctc_vi/onnx_packed/parakeet_ctc_vi_fp32.onnx
+[08/14/2026-08:59:59] [I] [TRT] ONNX IR version:  0.0.8
+[08/14/2026-08:59:59] [I] [TRT] Opset version:    17
+[08/14/2026-08:59:59] [I] [TRT] Producer name:    pytorch
+[08/14/2026-08:59:59] [I] [TRT] Producer version: 2.8.0
+[08/14/2026-08:59:59] [I] [TRT] Domain:
+[08/14/2026-08:59:59] [I] [TRT] Model version:    0
+[08/14/2026-08:59:59] [I] [TRT] Doc string:
+[08/14/2026-08:59:59] [I] [TRT] ----------------------------------------------------------------
+[08/14/2026-08:59:59] [W] [TRT] ModelImporter.cpp:420: Make sure input length has Int64 binding.
+[08/14/2026-09:00:02] [I] Finished parsing network model. Parse time: 2.6042
+[08/14/2026-09:00:02] [I] Set shape of input tensor audio_signal for optimization profile 0 to: MIN=1x80x16 OPT=1x80x500 MAX=1x80x2000
+[08/14/2026-09:00:02] [I] Set shape of input tensor length for optimization profile 0 to: MIN=1 OPT=1 MAX=1
+[08/14/2026-09:00:02] [W] [TRT] DLA requests all profiles have same min, max, and opt value. All dla layers are falling back to GPU
+[08/14/2026-09:00:03] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.
+[08/14/2026-09:04:42] [I] [TRT] Detected 2 inputs and 1 output network tensors.
+[08/14/2026-09:04:48] [I] [TRT] Total Host Persistent Memory: 367664
+[08/14/2026-09:04:48] [I] [TRT] Total Device Persistent Memory: 535040
+[08/14/2026-09:04:48] [I] [TRT] Total Scratch Memory: 8112128
+[08/14/2026-09:04:48] [I] [TRT] [BlockAssignment] Started assigning block shifts. This will take 513 steps to complete.
+[08/14/2026-09:04:48] [I] [TRT] [BlockAssignment] Algorithm ShiftNTopDown took 39.1987ms to assign 10 blocks to 513 nodes requiring 197130752 bytes.
+[08/14/2026-09:04:48] [I] [TRT] Total Activation Memory: 197130752
+[08/14/2026-09:04:49] [I] [TRT] Total Weights Memory: 1238034208
+[08/14/2026-09:04:49] [I] [TRT] Engine generation completed in 286.659 seconds.
+[08/14/2026-09:04:49] [I] [TRT] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 893 MiB, GPU 1290 MiB
+[08/14/2026-09:04:50] [I] [TRT] [MemUsageStats] Peak memory usage during Engine building and serialization: CPU: 8400 MiB
+[08/14/2026-09:04:50] [I] Engine built in 288.291 sec.
+[08/14/2026-09:04:50] [I] Created engine with size: 1201.99 MiB
+[08/14/2026-09:04:53] [I] [TRT] Loaded engine size: 1201 MiB
+[08/14/2026-09:04:53] [I] Engine deserialized in 1.28552 sec.
+[08/14/2026-09:04:53] [I] Skipped inference phase since --skipInference is added.
+&&&& PASSED TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --onnx=/home/jetson4/models/parakeet_ctc_vi/onnx_packed/parakeet_ctc_vi_fp32.onnx --saveEngine=/home/jetson4/models/parakeet_ctc_vi/engines/parakeet_ctc_vi_fp16.engine --minShapes=audio_signal:1x80x16,length:1 --optShapes=audio_signal:1x80x500,length:1 --maxShapes=audio_signal:1x80x2000,length:1 --fp16 --memPoolSize=workspace:4G --builderOptimizationLevel=3 --skipInference

@@ -1,0 +1,17 @@
+{
+  "backend": "nemo-pytorch-fp32",
+  "model_class": "EncDecCTCModelBPE",
+  "audio_path": "/workspace/audio/test_vieneu_16k.wav",
+  "audio_seconds": 4.64,
+  "reference": "Xin chào, đây là bản thử nghiệm VieNeu chạy bằng TensorRT trên Jetson Orin NX.",
+  "transcript": "Xin chào đây là bản thử nghiệm vai ni chạy trên dét sen o rin ế.",
+  "load_seconds": 13.584485,
+  "warmup_seconds": 0.708261,
+  "inference_seconds": 0.155564,
+  "rtf": 0.033527,
+  "wer": 0.6,
+  "cer": 0.333333,
+  "gpu_allocated_gb": 2.315228,
+  "gpu_reserved_gb": 2.347656,
+  "gpu_peak_allocated_gb": 2.333457
+}
