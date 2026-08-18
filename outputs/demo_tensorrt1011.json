@@ -1,0 +1,64 @@
+{
+  "backend": "tensorrt-fp16-10.11",
+  "audio_path": "/workspace/audio/test_vieneu_16k.wav",
+  "sample_rate": 16000,
+  "audio_seconds": 4.64,
+  "mel_shape": [
+    1,
+    80,
+    465
+  ],
+  "mel_length": [
+    464
+  ],
+  "logprobs_shape": [
+    1,
+    59,
+    1025
+  ],
+  "blank_id": 1024,
+  "token_ids": [
+    735,
+    180,
+    11,
+    137,
+    213,
+    23,
+    443,
+    8,
+    952,
+    832,
+    10,
+    57,
+    15,
+    874,
+    710,
+    236,
+    28,
+    529,
+    18,
+    395,
+    870,
+    882,
+    27,
+    180,
+    870,
+    897,
+    6
+  ],
+  "text": "Xin chào đây là bản thử nghiệm vai ni chạy trên dét sen o rin ế .",
+  "metrics": {
+    "audio_load_seconds": 0.00724,
+    "preprocess_seconds": 0.379792,
+    "tensorrt_seconds": 0.092177,
+    "decode_seconds": 0.001469,
+    "total_seconds": 0.480687,
+    "rtf": 0.103596
+  },
+  "startup": {
+    "model_restore_seconds": 13.471739,
+    "engine_load_seconds": 2.381693,
+    "warmup_seconds": 0.226021,
+    "runtime_ready_seconds": 16.079625
+  }
+}

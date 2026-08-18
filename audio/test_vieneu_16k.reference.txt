@@ -1,0 +1,1 @@
+Xin chào, đây là bản thử nghiệm VieNeu chạy bằng TensorRT trên Jetson Orin NX.
